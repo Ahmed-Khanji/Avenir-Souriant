@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        scrolDown: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(100%)' },
+        }
+      },
+      animation: {
+        scrollDown: 'scrollDown 8s linear forwards',
+      },
+    },
   },
   plugins: [],
 }
