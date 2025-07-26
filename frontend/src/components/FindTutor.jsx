@@ -34,13 +34,11 @@ function FindTutor() {
     return (
     <div className="flex flex-col items-center mx-auto mt-10 w-[90%] bg-inherit py-10 px-6">
         <h2 className="text-2xl font-semibold mb-6">Find Your Tutor</h2>
-        <div className="relative w-full max-w-lg">
-            <input
-                type="search"
-                className="w-full border px-4 py-3 rounded-full text-lg focus:outline-none"
-                placeholder={placeholder[index]}
-            />
-        </div>
+        <input
+            type="search"
+            className="w-full max-w-lg border px-4 py-3 rounded-full text-lg focus:outline-none"
+            placeholder={placeholder[index]}
+        />
       
         <div className="flex flex-row items-center space-x-5 mt-10 p-5 rounded-full shadow-lg">
             {subjects.map(({label, icon: Icon}, i) => (
